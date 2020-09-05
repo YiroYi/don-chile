@@ -1,0 +1,7 @@
+.header{
+  background-image: url(../img/header.jpg); /* We are telling that we will have 2 backgrounds first the gradient and the the image*/
+  background-size: cover; /* With this the image will become responsive*/
+  background-position: top;
+  grid-column: full-start / full-end;
+  opacity: .9;
+}

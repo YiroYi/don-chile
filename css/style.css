@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #f9f7f6;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-rows: min-content repeat(2, 100vh) min-content;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.heading-2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif; }
+
+.nav {
+  background-image: linear-gradient(to right bottom, rgba(50, 2, 30, 0.9), rgba(106, 37, 57, 0.9));
+  grid-column: full-start / full-end;
+  position: sticky;
+  top: 0;
+  padding: 2rem 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(2rem, 1fr));
+  justify-items: center;
+  align-items: center; }
+  .nav__item--1 {
+    grid-column: 1/ 2; }
+  .nav__item--2 {
+    grid-column: 2/ 3; }
+  .nav__item--logo {
+    height: 8rem;
+    position: absolute; }
+  .nav__item--4 {
+    grid-column: 4 / 5; }
+  .nav__item--5 {
+    grid-column: 5/ 6; }
+
+.header {
+  background-image: url(../img/header.jpg);
+  /* We are telling that we will have 2 backgrounds first the gradient and the the image*/
+  background-size: cover;
+  /* With this the image will become responsive*/
+  background-position: top;
+  grid-column: full-start / full-end;
+  opacity: .9; }
