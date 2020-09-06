@@ -32,7 +32,7 @@ body {
   position: sticky;
   top: 0;
   padding: 2rem 0;
-  z-index: 10;
+  z-index: 100;
   display: grid;
   grid-template-columns: repeat(5, minmax(2rem, 1fr));
   justify-items: center;
@@ -50,10 +50,43 @@ body {
     grid-column: 5/ 6; }
 
 .header {
-  background-image: url(../img/header.jpg);
-  /* We are telling that we will have 2 backgrounds first the gradient and the the image*/
-  background-size: cover;
-  /* With this the image will become responsive*/
-  background-position: top;
   grid-column: full-start / full-end;
-  opacity: .9; }
+  font-family: "Source Sans Pro", sans-serif; }
+  .header__image {
+    background-image: url(../img/header.jpg);
+    /* We are telling that we will have 2 backgrounds first the gradient and the the image*/
+    filter: blur(9px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .header__title-primary {
+    text-transform: uppercase;
+    font-size: 20rem;
+    font-weight: 800;
+    z-index: 10;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    box-shadow: 9px 10px 15px -5px rgba(0, 0, 0, 0.79);
+    padding-right: 3rem; }
+  .header__title-secondary {
+    font-size: 5rem;
+    font-weight: 400;
+    z-index: 10;
+    position: absolute;
+    top: 34rem;
+    left: 11.5rem; }
+  .header__btn {
+    background-color: #32021E;
+    font-size: 3rem;
+    border: none;
+    color: #fff;
+    z-index: 10;
+    position: absolute;
+    top: 43rem;
+    left: 11.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 2rem 2rem;
+    cursor: pointer; }
