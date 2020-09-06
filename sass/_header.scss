@@ -5,8 +5,7 @@
 
   font-family: $font-display;
   &__image {
-    background-image: url(../img/header.jpg); /* We are telling that we will have 2 backgrounds first the gradient and the the image*/
-    filter: blur(9px);
+    background-image: url(../img/header2.jpg); /* We are telling that we will have 2 backgrounds first the gradient and the the image*/
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +21,7 @@
     position: absolute;
     top: 10rem;
     left: 10rem;
-    box-shadow: 9px 10px 15px -5px rgba(0,0,0,0.79);
+    //box-shadow: 9px 10px 15px -5px rgba(0,0,0,0.79);
     padding-right: 3rem;
 
   }

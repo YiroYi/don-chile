@@ -53,9 +53,8 @@ body {
   grid-column: full-start / full-end;
   font-family: "Source Sans Pro", sans-serif; }
   .header__image {
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/header2.jpg);
     /* We are telling that we will have 2 backgrounds first the gradient and the the image*/
-    filter: blur(9px);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,7 +67,6 @@ body {
     position: absolute;
     top: 10rem;
     left: 10rem;
-    box-shadow: 9px 10px 15px -5px rgba(0, 0, 0, 0.79);
     padding-right: 3rem; }
   .header__title-secondary {
     font-size: 5rem;
@@ -90,3 +88,29 @@ body {
     text-transform: uppercase;
     padding: 2rem 2rem;
     cursor: pointer; }
+
+.services {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: min-content; }
+  .services__img {
+    background-color: blue;
+    width: 100%; }
+  .services__info {
+    background-color: yellow; }
+
+.info-card {
+  background-color: blue;
+  border-radius: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .info-card__face {
+    width: 10rem;
+    border-radius: 50%;
+    padding: 1rem; }
+  .info-card__content {
+    font-size: 1.5rem;
+    color: #6A2539; }
