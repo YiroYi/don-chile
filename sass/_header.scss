@@ -1,7 +1,54 @@
 .header{
-  background-image: url(../img/header.jpg); /* We are telling that we will have 2 backgrounds first the gradient and the the image*/
-  background-size: cover; /* With this the image will become responsive*/
-  background-position: top;
+
   grid-column: full-start / full-end;
-  opacity: .9;
+  //opacity: .85;
+
+  font-family: $font-display;
+  &__image {
+    background-image: url(../img/header.jpg); /* We are telling that we will have 2 backgrounds first the gradient and the the image*/
+    filter: blur(9px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  &__title-primary {
+    text-transform: uppercase;
+    font-size: 20rem;
+    font-weight: 800;
+    z-index: 10;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    box-shadow: 9px 10px 15px -5px rgba(0,0,0,0.79);
+    padding-right: 3rem;
+
+  }
+
+  &__title-secondary {
+    font-size: 5rem;
+    font-weight: 400;
+    z-index: 10;
+    position: absolute;
+    top: 34rem;
+    left: 11.5rem;
+  }
+
+  &__btn {
+    background-color: $color-primary-dark;
+
+    font-size: 3rem;
+    border: none;
+    color: #fff;
+    z-index: 10;
+    position: absolute;
+    top: 43rem;
+    left: 11.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 2rem 2rem;
+    cursor: pointer;
+  }
 }
